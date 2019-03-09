@@ -36,8 +36,11 @@ export default class KeyboardAwareScrollView extends KeyboardAwareBase {
 
 KeyboardAwareScrollView.propTypes = {
   getTextInputRefs: PropTypes.func,
-  onScroll: PropTypes.func
+  onScroll: PropTypes.func,
+  onKeyboardWillShow: PropTypes.func,
+  onKeyboardWillHide: PropTypes.func
 };
+
 KeyboardAwareScrollView.defaultProps = {
   ...KeyboardAwareBase.defaultProps,
   getTextInputRefs: () => {
